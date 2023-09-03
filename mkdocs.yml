@@ -32,19 +32,36 @@ plugins:
   - search
 
 markdown_extensions:
-  - admonition
-  - md_in_html
+  - admonition # mkdocs 警告框
+  - md_in_html # 脚注
+  - meta # 自定义文章元数据
+  - pymdownx.caret # 下划线
+  - pymdownx.mark # 文本高亮
+  - pymdownx.tilde # 删除线
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.arithmatex: # 数学公式的 TeX 语法支持
+      generic: true
+  - pymdownx.emoji: # 表情支持
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+  - pymdownx.tasklist: # 任务清单支持
+      custom_checkbox: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
   - tables
+  # - toc: # 大纲
+  #     permalink: true
+  #     slugify: !!python/name:pymdownx.slugs.uslugify
 
 extra_css:
   - _css/style.css
@@ -53,5 +70,6 @@ nav:
   - 主页: index.md
   - 环境搭建:
     - 第一个 C 语言程序: env/first_C.md
-    - 本地 C 语言运行环境: env/local_env.md
-    - VSCode 安装: env/vsc_install.md
+    - 安装 C 语言编译器: env/C_compiler.md
+    - 本地 C 语言开发 IDE 选择: env/local_env.md
+    - VSCode 安装与配置: env/vsc_install.md

@@ -1,9 +1,9 @@
 # 浙江大学 2023 秋冬程序设计与算法基础
 本仓库为浙江大学 2023 秋冬《程序设计与算法基础》课程仓库，目前暂定主要面向 2023 级图灵班翁恺老师教学班，也欢迎其他同学批评指正。
 
-本人是第一次使用 mkdocs 搭建课程指导网站，参考了 [Guahao](https://github.com/Guahao31/2023_DD)。
+本人是第一次使用 mkdocs 搭建课程指导网站，参考了 [Guahao](https://github.com/Guahao31/2023_DD) 和 [zjuerDFL](https://github.com/zjuerDFL/2023_EBD/tree/main)。
 
-可以查看[在线文档](https://zhoutimemachine.github.io/CProgrammingBasics/)，或者如果希望本地部署，可以首先安装 mkdocs 支持
+可以查看 [在线文档](https://zhoutimemachine.github.io/CProgrammingBasics/)，或者如果希望本地部署，可以首先安装 mkdocs 支持
 ```
 pip install mkdocs
 pip install mkdocs-material

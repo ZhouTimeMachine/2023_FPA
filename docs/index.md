@@ -6,5 +6,6 @@
 
 - 环境搭建
     - [第一个 C 语言程序](env/first_C.md)
-    - [本地 C 语言运行环境简介](env/local_env.md)
-    - [VSCode 安装](env/vsc_install.md)
+    - [安装 C 语言编译器](env/C_compiler.md)
+    - [本地 C 语言开发 IDE 选择](env/local_env.md)
+    - [VSCode 安装与配置](env/vsc_install.md)
