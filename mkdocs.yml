@@ -1,4 +1,4 @@
-site_name: 浙江大学 2023 秋冬《程序设计与算法基础》
+site_name: ZJU 2023 CProgramming
 site_url: https://note.tonycrane.cc/
 repo_name: ZhouTimeMachine/CProgrammingBasics
 repo_url: https://github.com/ZhouTimeMachine/CProgrammingBasics/
@@ -8,6 +8,7 @@ copyright: Copyright &copy; 2023-2024 <a href="https://github.com/ZhouTimeMachin
 
 theme:
   name: material
+  language: zh
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -20,11 +21,6 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: 亮色模式
-  language: zh
-  features:
-    - content.code.copy
-    - navigation.tabs
-    - navigation.sections
   icon:
     repo: fontawesome/brands/git-alt
     

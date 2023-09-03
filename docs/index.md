@@ -1,17 +1,5 @@
-# Welcome to MkDocs
+# 程序设计与算法基础
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+你好！欢迎来到程序设计与算法基础课程！
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+本课程文档适用于 2023-2024 秋冬学期《程序设计与算法基础》**翁恺**老师面向**图灵班**的教学班，为零基础的同学提供一些简单的引导。
