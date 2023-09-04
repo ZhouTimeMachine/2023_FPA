@@ -30,10 +30,6 @@ theme:
     
 plugins:
   - search
-  - heti:
-      extra_skipped_class:
-        - arithmatex
-      disable_serve: false
 
 extra_javascript:
   - https://cdn.tonycrane.cc/utils/katex.min.js
