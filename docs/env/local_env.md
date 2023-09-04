@@ -31,9 +31,9 @@ IDE，全称 Integrated Development Environment，即集成开发环境。除了
     - IDE，前者由 Microsoft 开发，后者由 Apple 开发
     - 都不跨平台，一般分别用于开发专用于 Windows/Apple 平台的应用程序
 
-**推荐安装 VSCode**，在 [下一篇](vsc_install.md) 中将介绍其安装教程。
+**推荐安装 VSCode**，在[下一篇](vsc_install.md)中将介绍其安装教程。
 
-**非常不推荐**安装 Dev-C++。但是如果运行环境安装存在巨大的困难，可以暂且将 Dev-C++ 作为前期作业的一个替代手段。可以参考这篇 [知乎文章](https://zhuanlan.zhihu.com/p/88295732?utm_source=qq) 安装 Dev-C++，或者直接从 [官网](https://www.bloodshed.net/) 跳转下载安装包。其安装基本上是傻瓜式的，未来你在课程中可能难免遇见仍在将 Dev-C++ 作为主力 IDE 的课友，可能需要跟他们合作或者对他们的课程作业进行互评，届时将会发现 Dev-C++ 带来的巨大不便。
+**非常不推荐**安装 Dev-C++。但是如果运行环境安装存在巨大的困难，可以暂且将 Dev-C++ 作为前期作业的一个替代手段。可以参考这篇[知乎文章](https://zhuanlan.zhihu.com/p/88295732?utm_source=qq)安装 Dev-C++，或者直接从[官网](https://www.bloodshed.net/)跳转下载安装包。其安装基本上是傻瓜式的，未来你在课程中可能难免遇见仍在将 Dev-C++ 作为主力 IDE 的课友，可能需要跟他们合作或者对他们的课程作业进行互评，届时将会发现 Dev-C++ 带来的巨大不便。
 
 **不推荐**安装 IDE。作为科班的学生，尽管初学，但是这方面应该对自己有较高的要求，能够掌握较好的开发环境配置管理能力。
 
