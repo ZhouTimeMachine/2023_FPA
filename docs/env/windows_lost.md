@@ -4,15 +4,21 @@
 
 使用 Win + R 组合键，将会出现如下窗口：
 
-![image-20230903220539714](graph/image-20230903220539714.png)
+<div style="text-align:center;">
+<img src="../graph/winR.png" alt="winR" style="margin: 0 auto; zoom: 80%;"/>
+</div>
 
 这就是运行窗口，可以在其中输入命令运行，即使是 Windows XP 都可以使用。例如在其中输入 `cmd` 后回车，就会出现**命令提示符**，如下图所示
 
-![image-20230904140243072](graph/image-20230904140243072.png)
+<div style="text-align:center;">
+<img src="../graph/cmd.png" alt="cmd" style="margin: 0 auto; zoom: 80%;"/>
+</div>
 
 但是命令提示符功能有限，也不是很美观，推荐安装 **Windows Terminal**（终端）。在 Microsoft Store 中搜索 terminal，出现如下的选项，然后选择安装即可。
 
-![image-20230904135830603](graph/image-20230904135830603.png)
+<div style="text-align:center;">
+<img src="../graph/windows_terminal.png" alt="windows_terminal" style="margin: 0 auto; zoom: 80%;"/>
+</div>
 
 在比较新版本的 Windows 中，Win 键打开菜单之后输入字符能够搜索到对应程序，除了常用的应用程序以外，启动 cmd.exe 和 sysdm.cpl 也可以这样进行，效果和 Win + R 相同。
 
@@ -53,6 +59,8 @@ wsl --import Ubuntu-22.04 D:\wsl\ubuntu22.04 D:\wsl\ubuntu22.04\ubuntu-22.04.tar
 
 使用终端的一大好处是方便打开 WSL。如下图所示，点击 Ubuntu 22.04.2 LTS 或者使用 Ctrl + Shift + 5 组合键就可以方便地打开刚刚安装的 Ubuntu 22.04。
 
-![image-20230904143043760](graph/image-20230904143043760.png)
+<div style="text-align:center;">
+<img src="../graph/wsl_terminal.png" alt="wsl_terminal" style="margin: 0 auto; zoom: 80%;"/>
+</div>
 
 其他 WSL 的使用方法留待你们慢慢探索了，在此不再赘述。

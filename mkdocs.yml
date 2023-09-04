@@ -23,6 +23,7 @@ theme:
         name: 日间模式
   features:
     - content.code.copy
+    - navigation.footer
     # - navigation.tabs
     # - navigation.sections
   icon:

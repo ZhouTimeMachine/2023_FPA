@@ -26,12 +26,12 @@ VSCode 直接从[官网](https://code.visualstudio.com/)选择自己平台对应
         - 在命令行窗口/终端可以用 `code` 命令打开 VSCode
 
 === "Mac"
-    `Mac` 的包下载下来之后拖入 `Application` 文件夹可以直接运行
+    Mac 的包下载下来之后拖入 `Application` 文件夹可以直接运行
 
     - 添加到 PATH：如果需要在命令行窗口/终端用 `code` 命令打开 VSCode，那么需要进行如下操作
         - 打开 VSCode 界面
         - 使用 Shift + Command + P 打开命令面板
-        - 输入 `shell command`，找到 `Shell Command: Install ‘code’ command in PATH` 进行执行
+        - 输入 `shell command`，找到 Shell Command: Install ‘code’ command in PATH 进行执行
 
 ## 插件安装
 
@@ -39,17 +39,23 @@ VSCode 直接从[官网](https://code.visualstudio.com/)选择自己平台对应
 
 打开 VSCode 后，在左侧竖栏寻找下面这个图标：
 
-![image-20230903205929345](graph/image-20230903205929345.png)
+<div style="text-align:center;">
+<img src="../graph/plugin.png" alt="plugin" style="margin: 0 auto; zoom: 80%;"/>
+</div>
 
 点击这个图标就进入了插件管理。建议可以安装下面两个插件：
 
 - C/C++: 微软自家的插件，可用于**语法识别、代码高亮**
 
-![image-20230903230423039](graph/image-20230903230423039.png)
+<div style="text-align:center;">
+<img src="../graph/plugin_ccpp.png" alt="plugin_ccpp" style="margin: 0 auto; zoom: 80%;"/>
+</div>
 
 - Code Runner: 能够使用**按键编译**运行程序，而不需要自己向终端输入命令
 
-![image-20230903230508134](graph/image-20230903230508134.png)
+<div style="text-align:center;">
+<img src="../graph/plugin_coderunner.png" alt="plugin_coderunner" style="margin: 0 auto; zoom: 80%;"/>
+</div>
 
 ### 汉化（可选）
 
@@ -57,4 +63,6 @@ VSCode 直接从[官网](https://code.visualstudio.com/)选择自己平台对应
 
 如果对英语不太熟悉，需要 VSCode 界面汉化，可以在插件中搜索 `Chinese` 安装如下插件：
 
-![image-20230903200828546](graph/image-20230903200828546.png)
+<div style="text-align:center;">
+<img src="../graph/plugin_chinese.png" alt="plugin_chinese" style="margin: 0 auto; zoom: 80%;"/>
+</div>

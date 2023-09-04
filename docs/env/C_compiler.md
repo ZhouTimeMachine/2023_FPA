@@ -8,7 +8,7 @@
 
 > 大部分零基础的同学使用的可能都是 Windows 系统，那么初学的情况下我们只需要知道我们即将安装的 C 语言编译器就是 gcc 就行了。
 
-gcc 初衷是面向 GNU 系统开发的，我们想要在 Windows 系统上使用，一般得依赖 MinGW 的 gcc，tdm-gcc 也是基于 MinGW 的 gcc 来的。
+gcc，全称 GNU Compiler Collection，著名的自由软件，被许多现代类 Unix 操作系统采用为标准编译器，但是 Windows 上并不直接支持。我们想要在 Windows 系统上使用，一般得依赖 MinGW 的 gcc，tdm-gcc 也是基于 MinGW 的 gcc 来的。
 
 !!! info "有能力的同学推荐在 Windows 上开启 WSL，使用 WSL 进行 C 语言开发。WSL 可以理解为在 Windows 的电脑中模拟一个 Linux 的小系统，从而能方便地控制环境。[WSL 安装简单引导](../windows_lost/#wsl)提供了一个简单的引导。"
 
@@ -72,7 +72,7 @@ gcc 初衷是面向 GNU 系统开发的，我们想要在 Windows 系统上使�
     ```
 
 === "macOS"
-    Mac 用户直接使用 `gcc -v` （或者 `xcode-select --install`）会提示你安装开发者工具，然后就会帮你安装 XCode 在内的一系列奇怪的东西，最后告诉你你安装的 gcc 其实是 clang，本质上是它把 clang 叫做 gcc 了。
+    Mac 用户直接使用 `gcc -v` （或者 `xcode-select --install`）会提示你安装开发者工具，然后就会自动安装 XCode 在内的一系列开发支持，最后告诉你你安装的 gcc 其实是 clang，本质上是它将 gcc 作为 clang 的别名 (alias) 了。
 
     成功安装后，终端输入 gcc 会出现如下信息：
     ```
@@ -87,13 +87,15 @@ gcc 初衷是面向 GNU 系统开发的，我们想要在 Windows 系统上使�
     InstalledDir: /Library/Developer/CommandLineTools/usr/bin
     ```
     
-    clang 也是一种 C 语言编译器，只是一些特性和 gcc 会有差异。在作业和实验中，一个好的遵从 C 标准的 C 代码，由不同的编译器编译后不应当产生不同的运行结果。如果写出“好”的代码，将是我们的努力目标。
+    clang 也是一种 C 语言编译器，只是一些特性和 gcc 会有差异。在作业和实验中，一个好的遵从标准的 C 代码，由不同的编译器编译后不应当产生不同的运行结果。因此如果你使用 clang 编译 C 代码运行不符合预期，代码出问题的概率比 clang 特性出问题的概率大很多。
 ## Windows 修改环境变量
 
 > Windows 用户环境变量配置出现问题了才需要看这一小节
 
 检查一下环境变量，Win + R 键输入 `sysdm.cpl` 后回车，会出现 “系统属性” 界面，选择 “高级”，如下图所示：
 
-![image-20230903225801787](graph/image-20230903225801787.png)
+<div style="text-align:center;">
+<img src="../graph/env_var.png" alt="env_var" style="margin: 0 auto; zoom: 80%;"/>
+</div>
 
 打开环境变量，在 “系统变量” 或者 “用户变量” 中找到 `PATH` 变量，在其中增加一项 tdm-gcc 的路径。例如你如果默认安装 tdm-gcc，那么路径可能就是 `C:\TDM-GCC-64\bin`。
