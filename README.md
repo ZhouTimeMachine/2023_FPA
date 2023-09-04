@@ -3,7 +3,7 @@
 
 本人是第一次使用 mkdocs 搭建课程指导网站，参考了 [Guahao](https://github.com/Guahao31/2023_DD)、[zjuerDFL](https://github.com/zjuerDFL/2023_EBD/tree/main) 和 [CTF 短学期课程仓库](https://github.com/team-s2/summer_course_2023)。
 
-可以查看[在线文档](https://zhoutimemachine.github.io/CProgrammingBasics/)，或者如果希望本地部署，可以首先安装 mkdocs 支持
+可以查看[在线文档](https://zhoutimemachine.github.io/2023_FPA/)，或者如果希望本地部署，可以首先安装 mkdocs 支持
 ```
 pip install mkdocs
 pip install mkdocs-material

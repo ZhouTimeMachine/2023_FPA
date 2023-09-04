@@ -1,7 +1,7 @@
-site_name: ZJU 2023 CProgramming
+site_name: ZJU FPA 2023 Fall
 site_url: https://note.tonycrane.cc/
-repo_name: ZTM/CProgrammingBasics
-repo_url: https://github.com/ZhouTimeMachine/CProgrammingBasics/
+repo_name: ZTM/2023_FPA
+repo_url: https://github.com/ZhouTimeMachine/2023_FPA/
 edit_uri: tree/master/docs
 site_description: 浙江大学 2023 秋冬《程序设计与算法基础》课程网站
 copyright: Copyright &copy; 2023 <a href="https://github.com/ZhouTimeMachine" target="_blank" rel="noopener">ZhouTimeMachine</a>
