@@ -8,6 +8,8 @@
 
 IDE，全称 Integrated Development Environment，即集成开发环境。除了基础的源代码编辑功能，IDE 还一般包括编译器、调试器、GUI 等功能。
 
+> GUI，全称 Graphics User Interface，即图形用户界面，和它相对的是 CLI (Command-Line Interface，命令行界面)。
+
 - VSCode (推荐)
     - 由 Microsoft 开发的代码编辑器，全称 Visual Studio Code
     - 跨平台，完全免费，支持丰富的插件扩展，功能极其强大

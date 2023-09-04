@@ -11,8 +11,7 @@
 VSCode 直接从[官网](https://code.visualstudio.com/)选择自己平台对应的安装包下载就行
 
 === "Windows"
-    Windows 的 exe 安装**可以全选默认选项一路 Next**，比较熟悉的同学可以自定义选项：
-    
+    Windows 的 exe 安装可以全选默认选项一路 Next，比较熟悉的同学可以自定义选项：
 
     - 安装目录
         - 推荐默认 C 盘，可能运行速度更快，也可以避免一些权限问题
@@ -28,10 +27,10 @@ VSCode 直接从[官网](https://code.visualstudio.com/)选择自己平台对应
 === "Mac"
     Mac 的包下载下来之后拖入 `Application` 文件夹可以直接运行
 
-    - 添加到 PATH：如果需要在命令行窗口/终端用 `code` 命令打开 VSCode，那么需要进行如下操作
+    - 添加到 PATH：如果需要在命令行窗口/终端用 `code` 命令打开 VSCode，那么需要如下操作
         - 打开 VSCode 界面
         - 使用 Shift + Command + P 打开命令面板
-        - 输入 `shell command`，找到 Shell Command: Install ‘code’ command in PATH 进行执行
+        - 输入 `shell command`，选择 `Shell Command: Install ‘code’ command in PATH` 回车执行
 
 ## 插件安装
 
@@ -110,7 +109,13 @@ gcc test.c
 
 这里有几个注意点：
 
-- 记得保存文件后再 gcc 编译，可以考虑开启自动保存（参考 [GZTime 的教程](https://blog.gztime.cc/posts/2020/6b9b4626/)）
+- 记得保存文件后再 gcc 编译，可以考虑开启自动保存
+    - 如下图所示，找到左下角的齿轮点击后选择 Setting 或者设置，出现的设置页面中搜索 `auto` 可以找到如图所示的 `Auto Save` 设置项，设置为 afterDelay 即可
+    - afterDelay 是对文件做出修改就实时保存，如果嫌保存频率过高可以选择 onFocusChange 或者 onWindowsChange
+    - 我本人使用的是 onFocusChange，这样移动到终端准备编译运行时源代码文件就会自动保存，既自动保存又不会保存太频繁
+
+![image-20230904203912524](graph/image-20230904203912524.png)
+
 - 建议工作目录和文件名全英文，给出以下几个**反面案例**：
     - 文件名 `作业.c`
     - 工作目录 `编程`
@@ -120,3 +125,46 @@ gcc test.c
 gcc test.c -o hello.exe
 ```
 - 更多的 gcc 选项和 VSCode 扩展功能留待你们探索
+
+## VSCode + WSL（可选）
+> 前面选择安装了 WSL 的使用 Windows 主力机的同学可以参考一下，非常有用的功能
+
+以下引导主要按照 [Microsoft 的官方文档](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode)，也可以参考其[中文版](https://learn.microsoft.com/zh-cn/windows/wsl/tutorials/wsl-vscode)。
+
+### 从 VSCode 连接到 WSL
+
+安装 WSL 插件，如下图所示：
+
+<div style="text-align:center;">
+<img src="../graph/plugin_WSL.png" alt="plugin_WSL" style="margin: 0 auto; zoom: 80%;"/>
+</div>
+
+或者你也可以像官方文档那样，直接安装整个 Remote Development 扩展包：
+
+<div style="text-align:center;">
+<img src="../graph/plugin_remote.png" alt="plugin_remote" style="margin: 0 auto; zoom: 80%;"/>
+</div>
+
+其中不仅有 WSL，还包括另外三个非常有用的远程开发插件。
+
+![image-20230904202552038](graph/image-20230904202552038.png)
+
+- Ctrl + Shift + P，在出现的命令框中输入 WSL，选择 `WSL: Connect to WSL in New Window`（或 `WSL: 在新窗口中连接到 WSL`）
+- 将打开一个新的 VSCode 窗口，里面已经连接到默认的 WSL 环境
+
+> 如果需要在本窗口连接到 WSL，或连接到非默认的 WSL 所安装的其他 Linux 发行版，可以选择其他 WSL 的命令
+
+![image-20230904210223787](graph/image-20230904210223787.png)
+
+注意上图左下角所显示的状态，表明已经连接到 WSL 所安装的 Ubuntu-22.04，接下来的开发操作和[上一节](#vscode_1)就区别不大了。
+
+### 从 WSL 启动 VSCode
+
+**确保你已经将 VSCode 添加到 PATH 环境变量中**。如果已经添加，那么直接在 WSL 的命令行中你所希望作为工作目录的位置执行
+```
+code .
+```
+
+就可以打开 VSCode，连接到 WSL 并且打开该目录作为工作目录。`.` 在这里表示当前目录即 `pwd`，如果将它替换成其他目录的路径也是可以将其打开作为工作目录的。
+
+如果你还未将 VSCode 添加到 PATH 环境变量中，那该功能将无法使用，需要你手动添加 VSCode 到 PATH 环境变量。例如你的 Windows 用户名是 ZTM，并把 VSCode 安装在默认目录，那么需要将 `C:\Users\ZTM\AppData\Local\Programs\Microsoft VS Code\bin` 加入到 PATH 环境变量，参考 [Windows 修改环境变量](../C_compiler/#windows)。

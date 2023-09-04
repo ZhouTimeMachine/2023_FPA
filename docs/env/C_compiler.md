@@ -98,4 +98,4 @@ gcc，全称 GNU Compiler Collection，著名的自由软件，被许多现代�
 <img src="../graph/env_var.png" alt="env_var" style="margin: 0 auto; zoom: 80%;"/>
 </div>
 
-打开环境变量，在 “系统变量” 或者 “用户变量” 中找到 `PATH` 变量，在其中增加一项 tdm-gcc 的路径。例如你如果默认安装 tdm-gcc，那么路径可能就是 `C:\TDM-GCC-64\bin`。
+打开环境变量，在 “系统变量” 或者 “用户变量” 中找到 PATH 变量，在其中增加一项 tdm-gcc 的路径。例如你如果默认安装 tdm-gcc，那么路径可能就是 `C:\TDM-GCC-64\bin`。

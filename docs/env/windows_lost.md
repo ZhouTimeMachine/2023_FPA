@@ -5,7 +5,7 @@
 使用 Win + R 组合键，将会出现如下窗口：
 
 <div style="text-align:center;">
-<img src="../graph/winR.png" alt="winR" style="margin: 0 auto; zoom: 80%;"/>
+<img src="../graph/WinR.png" alt="WinR" style="margin: 0 auto; zoom: 80%;"/>
 </div>
 
 这就是运行窗口，可以在其中输入命令运行，即使是 Windows XP 都可以使用。例如在其中输入 `cmd` 后回车，就会出现**命令提示符**，如下图所示
@@ -22,7 +22,7 @@
 
 在比较新版本的 Windows 中，Win 键打开菜单之后输入字符能够搜索到对应程序，除了常用的应用程序以外，启动 cmd.exe 和 sysdm.cpl 也可以这样进行，效果和 Win + R 相同。
 
-## WSL 安装简单引导
+## WSL 安装简单引导（可选）
 
 > 推荐装一装，如果主力机是 Windows 在以后将对 WSL 有较大需求
 
