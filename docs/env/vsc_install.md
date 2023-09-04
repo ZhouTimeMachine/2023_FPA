@@ -66,3 +66,57 @@ VSCode 直接从[官网](https://code.visualstudio.com/)选择自己平台对应
 <div style="text-align:center;">
 <img src="../graph/plugin_chinese.png" alt="plugin_chinese" style="margin: 0 auto; zoom: 80%;"/>
 </div>
+
+## VSCode 使用的一个简单示例
+
+复杂的配置与使用大家可以参考 [GZTime 的教程](https://blog.gztime.cc/posts/2020/6b9b4626/)，这里为想要尽快上手的同学提供一个简单的使用示例。
+
+打开 VSCode（打开时没有指定工作目录），将会出现如下的窗口：
+
+![image-20230904171607426](graph/image-20230904171607426.png)
+
+点击左侧的 `Open Folder`，选择一个目录作为你的工作目录，一般会把你这个窗口所要处理的所有文件放置在这里。注意到这里出现了一个 `TERMINAL`，这是通过顶栏的 Terminal > New Terminal（或者终端 > 新建终端）打开的。这个 `TERMINAL` 的功能大致与命令提示符/终端相同。
+
+![image-20230904171615028](graph/image-20230904171615028.png)
+
+按 `New File` 键可以新建文件，旁边有新建文件夹按键。当然，直接在左侧工作目录右键也可以新建文件/文件夹。
+
+<div style="text-align:center;">
+<img src="../graph/newfile.png" alt="newfile" style="margin: 0 auto; zoom: 60%;"/>
+</div>
+
+创建 `test.c`，输入 Hello World 的代码并**保存文件**。然后在终端执行
+```
+gcc test.c
+```
+
+在不同的系统将会生成不同的编译产物。
+
+=== "Windows"
+    将会生成 `a.exe`，随后执行
+    ```
+    ./a.exe
+    ```
+
+=== "WSL/macOS"
+    将会生成 `a.out`，随后执行
+    ```
+    ./a.out
+    ```
+
+以下展示在 macOS 上的执行结果：
+
+![image-20230904171634136](graph/image-20230904171634136.png)
+
+这里有几个注意点：
+
+- 记得保存文件后再 gcc 编译，可以考虑开启自动保存（参考 [GZTime 的教程](https://blog.gztime.cc/posts/2020/6b9b4626/)）
+- 建议工作目录和文件名全英文，给出以下几个**反面案例**：
+    - 文件名 `作业.c`
+    - 工作目录 `编程`
+    - 工作目录叫 `Coding`，但是绝对路径是 `D:/学习资料/Coding`
+- 可以指定编译生成的文件名，比如你想要输出文件名为 `hello.exe`，就可以执行
+```
+gcc test.c -o hello.exe
+```
+- 更多的 gcc 选项和 VSCode 扩展功能留待你们探索

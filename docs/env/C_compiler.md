@@ -87,7 +87,7 @@ gcc，全称 GNU Compiler Collection，著名的自由软件，被许多现代�
     InstalledDir: /Library/Developer/CommandLineTools/usr/bin
     ```
     
-    clang 也是一种 C 语言编译器，只是一些特性和 gcc 会有差异。在作业和实验中，一个好的遵从标准的 C 代码，由不同的编译器编译后不应当产生不同的运行结果。因此如果你使用 clang 编译 C 代码运行不符合预期，代码出问题的概率比 clang 特性出问题的概率大很多。
+    gcc 和 clang 都是 C 语言编译器，只是特性上存在差异。在作业和实验中，一个好的遵从标准的 C 代码，由不同的编译器编译后不应当产生不同的运行结果。因此如果你使用 clang 编译 C 代码运行不符合预期，代码出问题的概率比 clang 特性出问题的概率大很多。
 ## Windows 修改环境变量
 
 > Windows 用户环境变量配置出现问题了才需要看这一小节
