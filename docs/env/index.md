@@ -16,10 +16,10 @@
 
 本章节包括以下内容：
 
-- [第一个 C 语言程序](env/first_C.md)：体验 C 语言源代码的编译运行
-- [安装 C 语言编译器](env/C_compiler.md)：安装 gcc，安装完成后实际上能一个命令完成以上从高级语言到可执行程序的四步
-- [Windows 使用拾遗](env/windows_lost.md)：针对 Windows 用户，给出一些可能需要的使用指南
-- [本地 C 语言编辑器选择](env/local_env.md)：介绍性内容，选择用以编写 C 语言（或任何你可能用到的编程语言）的编辑器
-- [VSCode 安装与配置](env/vsc_install.md)：常用编辑器 VSCode 的安装配置引导
+- [第一个 C 语言程序](first_C.md)：体验 C 语言源代码的编译运行
+- [安装 C 语言编译器](C_compiler.md)：安装 gcc，安装完成后实际上能一个命令完成以上从高级语言到可执行程序的四步
+- [Windows 使用拾遗](windows_lost.md)：针对 Windows 用户，给出一些可能需要的使用指南
+- [本地 C 语言编辑器选择](local_env.md)：介绍性内容，选择用以编写 C 语言（或任何你可能用到的编程语言）的编辑器
+- [VSCode 安装与配置](vsc_install.md)：常用编辑器 VSCode 的安装配置引导
 
 建议按顺序阅读，也可各取所需，需要涉及其他篇章的内容时文中将设置跳转链接。
