@@ -19,7 +19,6 @@
 本章节将会介绍如下几种常用的调试技术：
 
 - [静态调试](static_debug.md)：不跑程序就看出代码中的错误并进行修改
-- [printf 与测试工程](print_debug.md)：在程序执行到特定位置时打印所关心的信息，观察是否与预期相符，并浅谈一些软件工程中的测试理论
-- [动态跟踪](track_debug.md)：完全的实时跟踪程序的执行，定位 bug 的产生
+- [动态调试](dynamic_debug.md)：在程序运行中跟踪程序的状态，定位 bug 的产生
 
 > 本章参考了 [TonyCrane 程设第一次授课 PPT](https://slides.tonycrane.cc/CKCProgrammingTutorial-1)，推荐大家一读

@@ -18,8 +18,7 @@ nav:
   - 调试技术:
     - 章节概述: debug/index.md
     - 静态调试: debug/static_debug.md
-    - printf 与测试工程: debug/print_debug.md
-    - 动态跟踪: debug/track_debug.md
+    - 动态调试: debug/dynamic_debug.md
 
 theme:
   name: material
