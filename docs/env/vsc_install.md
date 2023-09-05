@@ -34,8 +34,6 @@ VSCode 直接从[官网](https://code.visualstudio.com/)选择自己平台对应
 
 ## 插件安装
 
-### 推荐的插件
-
 打开 VSCode 后，在左侧竖栏寻找下面这个图标：
 
 <div style="text-align:center;">
@@ -50,27 +48,19 @@ VSCode 直接从[官网](https://code.visualstudio.com/)选择自己平台对应
 <img src="../graph/plugin_ccpp.png" alt="plugin_ccpp" style="margin: 0 auto; zoom: 80%;"/>
 </div>
 
-- Code Runner: 能够使用**按键编译**运行程序，而不需要自己向终端输入命令
-
-<div style="text-align:center;">
-<img src="../graph/plugin_coderunner.png" alt="plugin_coderunner" style="margin: 0 auto; zoom: 80%;"/>
-</div>
-
-### 汉化（可选）
-
-> 英语基础不太好的同学有困难可以使用，英语基础比较好以及想要在日常实践中学习英语的同学建议跳过这一步。
-
-如果对英语不太熟悉，需要 VSCode 界面汉化，可以在插件中搜索 `Chinese` 安装如下插件：
+- Chinese(Simplified): 界面汉化插件（可选）
 
 <div style="text-align:center;">
 <img src="../graph/plugin_chinese.png" alt="plugin_chinese" style="margin: 0 auto; zoom: 80%;"/>
 </div>
 
+> 英语基础不太好的同学有困难可以使用，英语基础比较好以及想要在日常实践中学习英语的同学建议跳过这一步。
+
+!!! info "这里只提供最基本的插件和使用示例，复杂的配置与使用大家可以参考 [GZTime 的教程](https://blog.gztime.cc/posts/2020/6b9b4626/)"
+
 ## VSCode 使用的一个简单示例
 
-复杂的配置与使用大家可以参考 [GZTime 的教程](https://blog.gztime.cc/posts/2020/6b9b4626/)，这里为想要尽快上手的同学提供一个简单的使用示例。
-
-打开 VSCode（打开时没有指定工作目录），将会出现如下的窗口：
+这里为想要尽快上手的同学提供一个简单的使用示例。打开 VSCode（打开时没有指定工作目录），将会出现如下的窗口：
 
 ![image-20230904171607426](graph/image-20230904171607426.png)
 
