@@ -6,6 +6,21 @@ edit_uri: tree/master/docs
 site_description: 浙江大学 2023 秋冬《程序设计与算法基础》课程网站
 copyright: Copyright &copy; 2023 <a href="https://github.com/ZhouTimeMachine" target="_blank" rel="noopener">ZhouTimeMachine</a>
 
+nav:
+  - 主页: index.md
+  - 环境搭建:
+    - 章节概述: env/index.md
+    - 第一个 C 语言程序: env/first_C.md
+    - 安装 C 语言编译器: env/C_compiler.md
+    - Windows 使用拾遗: env/windows_lost.md
+    - 本地 C 语言编辑器选择: env/local_env.md
+    - VSCode 安装与配置: env/vsc_install.md
+  - 调试技术:
+    - 章节概述: debug/index.md
+    - 静态调试: debug/static_debug.md
+    - printf 大法: debug/print_debug.md
+    - 动态跟踪: debug/track_debug.md
+
 theme:
   name: material
   language: zh
@@ -31,6 +46,10 @@ theme:
     
 plugins:
   - search
+  - heti:
+      extra_skipped_class:
+        - arithmatex
+      disable_serve: false
 
 extra_javascript:
   - https://cdn.tonycrane.cc/utils/katex.min.js
@@ -73,12 +92,3 @@ markdown_extensions:
   # - toc: # 大纲
   #     permalink: true
   #     slugify: !!python/name:pymdownx.slugs.uslugify
-
-nav:
-  - 主页: index.md
-  - 环境搭建:
-    - 第一个 C 语言程序: env/first_C.md
-    - 安装 C 语言编译器: env/C_compiler.md
-    - Windows 使用拾遗: env/windows_lost.md
-    - 本地 C 语言编辑器选择: env/local_env.md
-    - VSCode 安装与配置: env/vsc_install.md

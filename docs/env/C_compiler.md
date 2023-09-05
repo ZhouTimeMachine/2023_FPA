@@ -14,7 +14,7 @@ gcc，全称 GNU Compiler Collection，著名的自由软件，被许多现代�
 
 ## Windows 小白教程之 tdm-gcc
 
-> 前面选择了 WSL 的同学可以自行配置或者参考[WSL 安装简单引导](../windows_lost/#wsl)，然后再看[第 3 节](#gcc_1)。Mac 用户可以直接看[第 3 节](#gcc_1)。
+> 前面选择了 WSL 的同学可以自行配置或者参考 [WSL 安装简单引导](../windows_lost/#wsl)，然后再看[第 3 节](#gcc_1)。Mac 用户可以直接看[第 3 节](#gcc_1)。
 
 可以按照老师的视频教程下载 [tdm-gcc](https://jmeubank.github.io/tdm-gcc/download/)，目前最新版为 gcc 10.3.0。
 
@@ -31,7 +31,7 @@ gcc，全称 GNU Compiler Collection，著名的自由软件，被许多现代�
 - Add to PATH
     - **建议选上**。如果不选或者忘选了，将会需要自己配置 tdm-gcc 的环境变量路径。
 
-> P.S. 如果希望用更新版本的 gcc 可以使用 [winlibs 编译的 mingw-gcc](https://winlibs.com/)，或者你可以自己选择。
+> 如果希望用更新版本的 gcc 可以使用 [winlibs 编译的 mingw-gcc](https://winlibs.com/)，或者你可以自己选择。
 
 ## 测试 gcc 是否正确安装
 

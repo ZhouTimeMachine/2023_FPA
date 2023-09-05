@@ -1,12 +1,13 @@
 # 浙江大学 2023 秋冬程序设计与算法基础
-本仓库为浙江大学 2023 秋冬《程序设计与算法基础》课程仓库，目前暂定主要面向 2023 级图灵班翁恺老师教学班，也欢迎其他同学批评指正。
+本仓库为浙江大学 2023 秋冬《程序设计与算法基础》课程仓库，目前暂定主要面向 2023 级图灵班翁恺老师教学班，也欢迎其他同学参考。
 
-本人是第一次使用 mkdocs 搭建课程指导网站，参考了 [Guahao](https://github.com/Guahao31/2023_DD)、[zjuerDFL](https://github.com/zjuerDFL/2023_EBD/tree/main) 和 [CTF 短学期课程仓库](https://github.com/team-s2/summer_course_2023)。
+本人是第一次使用 mkdocs 搭建课程指导网站，参考了 [Guahao](https://github.com/Guahao31/2023_DD)、[zjuerDFL](https://github.com/zjuerDFL/2023_EBD/tree/main) 和 [CTF 短学期课程仓库](https://github.com/team-s2/summer_course_2023)。由于本人经验极少，知识面不广，写作过程可能容易出现纰漏与不当，如果有任何意见欢迎提出 issue，或通过其他任何方式联系我。
 
-可以查看[在线文档](https://zhoutimemachine.github.io/2023_FPA/)，或者如果希望本地部署，可以首先安装 mkdocs 支持
+建议使用[在线文档](https://zhoutimemachine.github.io/2023_FPA/)，或者如果希望本地部署，可以首先安装 mkdocs 支持
 ```
 pip install mkdocs
 pip install mkdocs-material
+pip install mkdocs-heti-plugin
 ```
 
 打开实时渲染服务（默认端口 8000）

@@ -1,0 +1,329 @@
+output_dir: output_stories/gpt-4_1024x512/Write a short story about 2 girls, their
+  names are asuna and hiyori/replicate_0/composed_keypose
+image_width: 1024
+layout0:
+  output_image: layout_keypose_0.png
+  box_layout:
+  - - 0.09765625
+    - 0.119140625
+    - 0.419921875
+    - 1.0
+  - - 0.419921875
+    - 0.099609375
+    - 0.728515625
+    - 1.0
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  local_prompt:
+  - Asuna, walking hand-in-hand, in an unfamiliar forest, laughing and enjoying their
+    adventurous journey
+  - Hiyori, walking hand-in-hand, in an unfamiliar forest, laughing and enjoying their
+    adventurous journey
+layout1:
+  output_image: layout_keypose_1.png
+  box_layout:
+  - - 0.048828125
+    - 0.173828125
+    - 0.1953125
+    - 1.0
+  - - 0.2412109375
+    - 0.140625
+    - 0.3818359375
+    - 1.0
+  - - 0.37109375
+    - 0.3125
+    - 0.625
+    - 1.0
+  - - 0.0
+    - 0.640625
+    - 1.0
+    - 1.0
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  - keypose2_path
+  - keypose3_path
+  local_prompt:
+  - Asuna, near a stunning wooden door inside a giant tree trunk
+  - Hiyori, near a stunning wooden door inside a giant tree trunk
+  - a stunning wooden door, inside a giant tree trunk
+  - a giant tree trunk
+layout2:
+  output_image: layout_keypose_2.png
+  box_layout:
+  - - 0.09765625
+    - 0.1640625
+    - 0.390625
+    - 1.0
+  - - 0.390625
+    - 0.00390625
+    - 0.990234375
+    - 1.0
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  local_prompt:
+  - Hiyori, admiring the detailed carvings of vines and flowers on a door
+  - the door, with detailed carvings of vines and flowers
+layout3:
+  output_image: layout_keypose_3.png
+  box_layout:
+  - - 0.0439453125
+    - 0.29296875
+    - 0.2392578125
+    - 1.0
+  - - 0.244140625
+    - 0.302734375
+    - 0.46875
+    - 1.0
+  - - 0.46875
+    - 0.390625
+    - 0.5126953125
+    - 0.478515625
+  - - 0.625
+    - 0.0390625
+    - 0.810546875
+    - 1.0
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  - keypose2_path
+  - keypose3_path
+  local_prompt:
+  - Asuna, discovering a tiny golden key
+  - Hiyori, discovering a tiny golden key
+  - tiny golden key
+  - mysterious door
+layout4:
+  output_image: layout_keypose_4.png
+  box_layout:
+  - - 0.099609375
+    - 0.1015625
+    - 0.310546875
+    - 0.9765625
+  - - 0.412109375
+    - 0.111328125
+    - 0.611328125
+    - 0.974609375
+  - - 0.2880859375
+    - 0.0
+    - 0.5419921875
+    - 1.0
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  - keypose2_path
+  local_prompt:
+  - Asuna, gazing in awe at the newly opened door, unveiling a magical world
+  - Hiyori, gazing in awe at the newly opened door, unveiling a magical world
+  - a newly opened door, unveiling a magical world full of wonder and excitement
+layout5:
+  output_image: layout_keypose_5.png
+  box_layout:
+  - - 0.107421875
+    - 0.166015625
+    - 0.3125
+    - 0.986328125
+  - - 0.361328125
+    - 0.177734375
+    - 0.5615234375
+    - 0.978515625
+  - - 0.6044921875
+    - 0.50390625
+    - 0.96875
+    - 0.796875
+  - - 0.0
+    - 0.0
+    - 0.1240234375
+    - 1.0
+  - - 0.8935546875
+    - 0.0
+    - 1.0
+    - 1.0
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  - keypose2_path
+  - keypose3_path
+  - keypose4_path
+  local_prompt:
+  - a girl exploring the vibrant meadows, with a shimmering river flowing nearby
+  - a girl exploring the vibrant meadows, with a shimmering river flowing nearby
+  - a shimmering river flowing nearby
+  - tall fruit tree surrounding them in a picturesque landscape
+  - tall fruit tree surrounding them in a picturesque landscape
+layout6:
+  output_image: layout_keypose_6.png
+  box_layout:
+  - - 0.01953125
+    - 0.0390625
+    - 0.263671875
+    - 0.9609375
+  - - 0.263671875
+    - 0.01953125
+    - 0.498046875
+    - 0.9609375
+  - - 0.498046875
+    - 0.0703125
+    - 0.87890625
+    - 0.9609375
+  - - 0.931640625
+    - 0.234375
+    - 1.0
+    - 0.84375
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  - keypose2_path
+  - keypose3_path
+  local_prompt:
+  - Asuna, encountering the large, cream-colored, friendly creature, in a forested
+    path
+  - Hiyori, encountering the large, cream-colored, friendly creature, in a forested
+    path
+  - a large, cream-colored, friendly creature, in a forested path
+  - a rustling sound from the bushes
+layout7:
+  output_image: layout_keypose_7.png
+  box_layout:
+  - - 0.09765625
+    - 0.1953125
+    - 0.29296875
+    - 0.9765625
+  - - 0.25390625
+    - 0.33203125
+    - 0.64453125
+    - 0.72265625
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  local_prompt:
+  - Hiyori, petting a soft-furred creature
+  - soft-furred creature
+layout8:
+  output_image: layout_keypose_8.png
+  box_layout:
+  - - 0.0927734375
+    - 0.146484375
+    - 0.2490234375
+    - 0.921875
+  - - 0.2880859375
+    - 0.1171875
+    - 0.44921875
+    - 0.921875
+  - - 0.5419921875
+    - 0.302734375
+    - 0.8154296875
+    - 1.0
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  - keypose2_path
+  local_prompt:
+  - Asuna, guided by a friendly creature, venture deeper into the enchanting magical
+    world, exploring its breathtaking scenery and mysterious wonders
+  - Hiyori, guided by a friendly creature, venture deeper into the enchanting magical
+    world, exploring its breathtaking scenery and mysterious wonders
+  - a friendly creature, guiding Asuna and Hiyori into the enchanting magical world,
+    exploring its breathtaking scenery and mysterious wonders
+layout9:
+  output_image: layout_keypose_9.png
+  box_layout:
+  - - 0.0908203125
+    - 0.0390625
+    - 0.3837890625
+    - 1.0
+  - - 0.595703125
+    - 0.0390625
+    - 0.888671875
+    - 1.0
+  - - 0.1953125
+    - 0.390625
+    - 0.341796875
+    - 0.68359375
+  - - 0.439453125
+    - 0.625
+    - 0.68359375
+    - 0.91796875
+  - - 0.29296875
+    - 0.1171875
+    - 0.48828125
+    - 0.5078125
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  - keypose2_path
+  - keypose3_path
+  - keypose4_path
+  local_prompt:
+  - Asuna, surrounded by glowing butterflies, vibrant jewel-toned birds, and playful
+    magical creatures
+  - Hiyori, surrounded by glowing butterflies, vibrant jewel-toned birds, and playful
+    magical creatures
+  - glowing butterflies
+  - vibrant jewel-toned birds
+  - playful magical creatures
+layout10:
+  output_image: layout_keypose_10.png
+  box_layout:
+  - - 0.09765625
+    - 0.17578125
+    - 0.283203125
+    - 1.0
+  - - 0.322265625
+    - 0.15625
+    - 0.5029296875
+    - 1.0
+  - - 0.654296875
+    - 0.09765625
+    - 0.98046875
+    - 1.0
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  - keypose2_path
+  local_prompt:
+  - Asuna, walking towards the carved wooden door during a beautiful sunset
+  - Hiyori, walking towards the carved wooden door during a beautiful sunset
+  - a carved wooden door
+layout11:
+  output_image: layout_keypose_11.png
+  box_layout:
+  - - 0.1123046875
+    - 0.119140625
+    - 0.2666015625
+    - 1.0
+  - - 0.28515625
+    - 0.037109375
+    - 0.5
+    - 1.0
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  local_prompt:
+  - Asuna, in an emotional farewell
+  - Hiyori, in an emotional farewell
+layout12:
+  output_image: layout_keypose_12.png
+  box_layout:
+  - - 0.0390625
+    - 0.05859375
+    - 0.21484375
+    - 0.9375
+  - - 0.205078125
+    - 0.109375
+    - 0.3642578125
+    - 0.890625
+  - - 0.37890625
+    - 0.001953125
+    - 0.9990234375
+    - 1.0
+  keypose_path:
+  - keypose0_path
+  - keypose1_path
+  - keypose2_path
+  local_prompt:
+  - Asuna, closing a wooden door, magical landscape behind
+  - a wooden door
+  - a magical landscape
