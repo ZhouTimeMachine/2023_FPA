@@ -62,19 +62,23 @@ VSCode 直接从[官网](https://code.visualstudio.com/)选择自己平台对应
 
 这里为想要尽快上手的同学提供一个简单的使用示例。打开 VSCode（打开时没有指定工作目录），将会出现如下的窗口：
 
-![image-20230904171607426](graph/image-20230904171607426.png)
+![vscode_initUI](graph/vscode_initUI.png)
 
-点击左侧的 `Open Folder`，选择一个目录作为你的工作目录，一般会把你这个窗口所要处理的所有文件放置在这里。注意到这里出现了一个 `TERMINAL`，这是通过顶栏的 Terminal > New Terminal（或者终端 > 新建终端）打开的。这个 `TERMINAL` 的功能大致与命令提示符/终端相同。
+点击左侧的 `Open Folder`，选择一个目录作为你的工作目录，一般会把你这个窗口所要处理的所有文件放置在这里。顶栏 Terminal > New Terminal（或终端 > 新建终端）打开 VSCode 的内部终端，功能大致与命令提示符/终端相同。
 
-![image-20230904171615028](graph/image-20230904171615028.png)
+![vscode_newterminal](graph/vscode_newterminal.png)
 
-按 `New File` 键可以新建文件，旁边有新建文件夹按键。当然，直接在左侧工作目录右键也可以新建文件/文件夹。
+下图就是打开了工作目录并新建了终端的界面状态。
+
+![vscode_workdir_terminal](graph/vscode_workdir_terminal.png)
+
+鼠标移动到工作区，按 `New File` 键可以新建文件，旁边有新建文件夹按键。当然，直接在左侧工作目录右键也可以新建文件/文件夹。
 
 <div style="text-align:center;">
 <img src="../graph/newfile.png" alt="newfile" style="margin: 0 auto; zoom: 60%;"/>
 </div>
 
-创建 `test.c`，输入 Hello World 的代码并**保存文件**。然后在终端执行
+创建 `test.c`，输入 Hello World 的代码并**保存文件**。然后在终端输入以下命令并执行：
 ```
 gcc test.c
 ```
@@ -82,20 +86,20 @@ gcc test.c
 在不同的系统将会生成不同的编译产物。
 
 === "Windows"
-    将会生成 `a.exe`，随后执行
+    将会在和 `test.c` 同目录下生成 `a.exe`，随后执行
     ```
     ./a.exe
     ```
 
 === "WSL/macOS"
-    将会生成 `a.out`，随后执行
+    将会在和 `test.c` 同目录下生成 `a.out`，随后执行
     ```
     ./a.out
     ```
 
 以下展示在 macOS 上的执行结果：
 
-![image-20230904171634136](graph/image-20230904171634136.png)
+![vscode_gccout_mac](graph/vscode_gccout_mac.png)
 
 这里有几个注意点：
 
@@ -104,7 +108,7 @@ gcc test.c
     - afterDelay 是对文件做出修改就实时保存，如果嫌保存频率过高可以选择 onFocusChange 或者 onWindowsChange
     - 我本人使用的是 onFocusChange，这样移动到终端准备编译运行时源代码文件就会自动保存，既自动保存又不会保存太频繁
 
-![image-20230904203912524](graph/image-20230904203912524.png)
+![vscode_autosave](graph/vscode_autosave.png)
 
 - 建议工作目录和文件名全英文，给出以下几个**反面案例**：
     - 文件名 `作业.c`
