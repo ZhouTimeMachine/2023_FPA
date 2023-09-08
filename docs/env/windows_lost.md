@@ -1,5 +1,7 @@
 # Windows 使用拾遗
 
+!!! info "Mac 用户和已经对 Windows Terminal 和 WSL 比较熟练的同学可以跳过这一节"
+
 ## 运行与终端
 
 使用 Win + R 组合键，将会出现如下窗口：
