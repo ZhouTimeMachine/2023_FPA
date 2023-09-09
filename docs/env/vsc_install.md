@@ -141,14 +141,14 @@ gcc test.c -o hello.exe
 
 其中不仅有 WSL，还包括另外三个非常有用的远程开发插件。
 
-![image-20230904202552038](graph/image-20230904202552038.png)
+![plugin_remote_detail](graph/plugin_remote_detail.png)
 
 - Ctrl + Shift + P，在出现的命令框中输入 WSL，选择 `WSL: Connect to WSL in New Window`（或 `WSL: 在新窗口中连接到 WSL`）
 - 将打开一个新的 VSCode 窗口，里面已经连接到默认的 WSL 环境
 
 > 如果需要在本窗口连接到 WSL，或连接到非默认的 WSL 所安装的其他 Linux 发行版，可以选择其他 WSL 的命令
 
-![image-20230904210223787](graph/image-20230904210223787.png)
+![vscode_wsl_connected](graph/vscode_wsl_connected.png)
 
 注意上图左下角所显示的状态，表明已经连接到 WSL 所安装的 Ubuntu-22.04，接下来的开发操作和[上一节](#vscode_1)就区别不大了。
 

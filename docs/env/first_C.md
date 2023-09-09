@@ -19,11 +19,11 @@ int main() {
 
 可以先用 [C 在线工具 | 菜鸟工具](https://c.runoob.com/compile/11/)进行 C 语言程序的体验。进入之后点击清空，可以看到如下界面：
 
-![image-20230903153802588](graph/image-20230903153802588.png)
+![Conline_index](graph/Conline_index.png)
 
 将上面的代码输入到左边的框中，然后点击 `点击运行` 按钮，就可以得到运行结果：
 
-![image-20230903154045780](graph/image-20230903154045780.png)
+![Conline_run](graph/Conline_run.png)
 
 ## 常见代码错误
 

@@ -12,6 +12,6 @@
 ## 推荐阅读
 
 - [计算机教育中缺失的一课](https://missing-semester-cn.github.io/)
-- [如何让自己看上去、闻上去都像一个 CS 人](https://hobbitqia.cc/p/5948019b.html) by HobbitQia
+- [如何让自己看上去、闻上去都像一个 CS 人](https://www.cc98.org/topic/5370849) by HobbitQia
 - [鹤翔万里的笔记本](https://note.tonycrane.cc/) by TonyCrane
 - [鹤翔万里公开在线幻灯片](https://slides.tonycrane.cc/) by TonyCrane，配合 TonyCrane 的 b 站视频体验更佳

@@ -96,13 +96,13 @@ printf 大法的强大之处在于它可以在程序的各种位置灵活输出�
 
 创建源代码文件 `a.c`，如下图所示：
 
-![image-20230906020940342](graph/image-20230906020940342.png)
+![vscode_debug_config](graph/vscode_debug_config.png)
 
 最左侧栏切换到运行和调试，在第 9 行打上断点，选择 `C Launch` 就可以开始调试。
 
 !!! info "注意运行“C Launch”之前需要在编辑器选中想要编译的 C 文件，它会默认编译调试你当前的文件"
 
-![image-20230906022140758](graph/image-20230906022140758.png)
+![vscode_debugging](graph/vscode_debugging.png)
 
 控制区从左到右为
 
