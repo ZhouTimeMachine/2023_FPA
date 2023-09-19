@@ -30,36 +30,65 @@
 
 WSL，全称 Windows Subsystem for Linux（适用于 Linux 的 Windows 子系统），是一项允许开发者不依靠单独的虚拟机或双启动 (dual booting) 而在 Windows 上运行 Linux 环境的功能。
 
-### 安装 WSL
+### 安装：以 Ubuntu 为例
 
-可以直接参考[官方文档 Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install) 或者它的[中文版](https://learn.microsoft.com/zh-cn/windows/wsl/install)。
+在这里以在 Windows11 上安装 WSL2 Ubuntu 为例介绍最简单的安装流程，详细的信息可以参考[官方文档 Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install) 或者它的[中文版](https://learn.microsoft.com/zh-cn/windows/wsl/install)。
+
+> Ubuntu 是 Linux 的一种发行版本，在这里就不对 Linux 的众多发行版本进行介绍和评价了。有能力和想法的同学可以自己对照教程安装其他发行版，比如在终端输入 `wsl --list --online` 可以看到所有可以选择的 Linux 发行版
 
 注意安装 WSL 的先决条件：Windows 版本**不低于** Windows 10 20H2（Build 19042）或者 Windows 11。如果版本太老，请更新到最新版本，如果无法更新可以考虑重装系统。
 
 !!! info "可以使用 `winver` 命令查询 Windows 版本，Win + R 输入 `winver` 或者在 Win 键出现的菜单栏中直接输入 `winver` 都可以启动。新买的电脑可能 Windows 11 居多，如果是 Windows 10 的电脑版本显示可能是 21H2（操作系统内部版本 19044.3086），这样也是符合先决条件的。"
 
-推荐安装 WSL2 而不是 WSL1，如果发现你的版本是 WSL1 建议升级。
+直接使用如下命令自动安装：
 
-### 安装 Linux 发行版：以 Ubuntu 22.04 为例
-
-完成 WSL 的安装后，就可以选择你想要运行的 Linux 发行版了。这里不对 Linux 的众多发行版本进行介绍和评价，有能力的同学可以自行选择。推荐新入门的同学安装 [Ubuntu 22.04.1 LTS Windows Subsystem for Linux 2](https://www.microsoft.com/store/productId/9PN20MSR04DW) 。
-
-Linux 的发行版本默认安装在 C 盘，推荐将其导出到其他数据盘，避免占用 C 盘太多空间。例如完成了 Ubuntu 22.04 的安装，可以在 D 盘建立目录 `D:\wsl\ubuntu22.04`（按个人喜好定义目录），随后在命令提示符/终端执行：
 ```
-wsl --export Ubuntu-22.04 D:\wsl\ubuntu22.04\ubuntu-22.04.tar
+wsl --install
 ```
 
-将导出 ubuntu-22.04.tar，随后进行注销：
+中途可能会弹出两个窗口，显示正在修改什么东西，统统选择“是”。安装完成后，将出现如下界面
+
+![wsl_ubuntu_set](graph/wsl_ubuntu_set.png)
+
+- 设置一个用户名，建议全英文无空格
+    - 若有空格，将会只取第一个空格前面的内容作为你的用户名
+- 输入密码，注意你输入的字符不会在屏幕上显示，需要盲打
+    - 如果打了乱七八糟的字符不要慌，确认密码时故意打错会重新让你设置密码
+    - 确认密码与输入密码一致才会设置成功
+
+这样就完成了 WSL2 Ubuntu 的安装。
+
+### 简单的设置
+
+> 上面已经完成了安装，这里是为了方便未来的使用而进行的一些说明
+
+以上安装完成后，登录 Ubuntu 将会默认以 root 用户打开。但是 root 用户具有最高权限，胡乱操作容易出问题，以及 root 用户的颜色是白色的，不是特别好看，因此可以修改默认的登录用户。首先在 WSL 外输入以下指令以停止 WSL：
+
 ```
-wsl --unregister Ubuntu-22.04
+wsl --shutdown
+```
+
+然后对 Ubuntu 进行默认用户配置的修改，假设你设定的用户名为 zhou：
+```
+Ubuntu config --default-user zhou
+```
+
+Linux 的发行版本默认安装在 C 盘，推荐将其导出到其他数据盘，避免占用 C 盘太多空间。例如完成了 Ubuntu 的安装，可以在 D 盘建立目录 `D:\wsl\ubuntu`（按个人喜好定义目录），随后在命令提示符/终端执行：
+```
+wsl --export Ubuntu D:\wsl\ubuntu\ubuntu.tar
+```
+
+将导出 ubuntu.tar，随后进行注销：
+```
+wsl --unregister Ubuntu
 ```
 
 最后重新导入。
 ```
-wsl --import Ubuntu-22.04 D:\wsl\ubuntu22.04 D:\wsl\ubuntu22.04\ubuntu-22.04.tar
+wsl --import Ubuntu D:\wsl\ubuntu D:\wsl\ubuntu\ubuntu.tar
 ```
 
-使用终端的一大好处是方便打开 WSL。如下图所示，点击 Ubuntu 22.04.2 LTS 或者使用 Ctrl + Shift + 5 组合键就可以方便地打开刚刚安装的 Ubuntu 22.04。
+使用终端的一大好处是方便打开 WSL。如下图所示，点击 Ubuntu 22.04.2 LTS 或者使用 Ctrl + Shift + 5 组合键就可以方便地打开 Ubuntu 22.04。当然这是因为我安装的是 `Ubuntu 22.04` 的缘故，在你们的电脑中显示的应该就是 `Ubuntu`。
 
 <div style="text-align:center;">
 <img src="../graph/wsl_terminal.png" alt="wsl_terminal" style="margin: 0 auto; zoom: 80%;"/>

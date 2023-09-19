@@ -26,7 +26,7 @@ printf 大法的强大之处在于它可以在程序的各种位置灵活输出�
 
 !!! info "希望快速上手的同学可以按接下来的引导配置，面向单文件编译，编译产生的可执行程序与源代码在同一目录下"
 
-在工作目录的 `.vscode` 文件夹下创建 `tasks.json` 和 `launch.json` 文件。`tasks.json` 的内容为
+在工作目录的 `.vscode` 文件夹下创建 `tasks.json` 和 `launch.json` 文件。如果还没有 `.vscode` 文件夹，则手动创建一个。`tasks.json` 的内容为
 ```json
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558

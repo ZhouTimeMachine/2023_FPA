@@ -18,18 +18,59 @@ gcc，全称 GNU Compiler Collection，著名的自由软件，被许多现代�
 
 可以按照老师的视频教程下载 [tdm-gcc](https://jmeubank.github.io/tdm-gcc/download/)，目前最新版为 gcc 10.3.0。
 
-桌面找到 `此电脑`，右键属性，可以看到是 64 位系统还是 32 位系统（现在一般都是 64 位系统）。64 位系统直接下载 tdm64-gcc-10.3.0-2.exe 安装即可，32 位则选择 tdm-gcc-10.3.0.exe。
+需要判断自己的 Windows 是 64 位系统还是 32 位系统（现在一般都是 64 位系统）。
 
-同样考虑自定义安装选项：
+=== "Windows 11"
 
-- 自定义目录
-    - 默认 C 盘也挺不错
+    点击 Win 键，输入“关于”，如下图所示。打开“关于你的电脑”后就可以看到电脑是不是 64 位了，新电脑一般都是 64 位。
+    
+    <div style="text-align:center;">
+        <img src="../graph/win11_about.png" alt="win11_about" style="margin: 0 auto; zoom: 60%;"/>
+    </div>
+
+=== "Windows 10"
+
+    桌面找到“此电脑”，右键属性
+    
+    <div style="text-align:center;">
+        <img src="../graph/pc_right_attr.png" alt="pc_right_attr" style="margin: 0 auto; zoom: 80%;"/>
+    </div>
+    
+    可以看到是 64 位系统还是 32 位系统。
+    
+    <div style="text-align:center;">
+        <img src="../graph/win10_x64.png" alt="win10_x64" style="margin: 0 auto; zoom: 60%;"/>
+    </div>
+
+64 位系统直接下载 tdm64-gcc-10.3.0-2.exe 安装即可，32 位则选择 tdm-gcc-10.3.0.exe。
+
+准备安装。对于零基础的同学，电脑里应该还没装过 tdm-gcc，选择 create 即可。
+<div style="text-align:center;">
+    <img src="../graph/tdmgcc_create.png" alt="tdmgcc_create" style="margin: 0 auto; zoom: 40%;"/>
+</div>
+接下来就是根据 64/32 位系统选择对应的版本
+
+<div style="text-align:center;">
+    <img src="../graph/tdm32_or_64.png" alt="tdm32_or_64" style="margin: 0 auto; zoom: 40%;"/>
+</div>
+选择安装路径，推荐零基础同学选择默认路径（如 64 位的 `C:\TDM-GCC-64`）
+
+<div style="text-align:center;">
+    <img src="../graph/tdmgcc_path.png" alt="tdmgcc_path" style="margin: 0 auto; zoom: 40%;"/>
+</div>
+
+接下来是要认真考虑的页面。
+
 - 可选的安装项
-    - 可以全选。如果确定不需要一些东西可以不选，比如确定自己不会再需要调试 32 位程序的话可以不选 gdb32
+    - 可以全选。如果确定不需要一些东西可以不选，比如确定自己不会再需要调试 32 位程序的话可以不选 gdb32。
 - Start Menu items
     - 看个人意愿，可以不选
 - Add to PATH
     - **建议选上**。如果不选或者忘选了，将会需要自己配置 tdm-gcc 的环境变量路径。
+
+<div style="text-align:center;">
+    <img src="../graph/tdmgcc_install_items.png" alt="tdmgcc_install_items" style="margin: 0 auto; zoom: 40%;"/>
+</div>
 
 > 如果希望用更新版本的 gcc 可以使用 [winlibs 编译的 mingw-gcc](https://winlibs.com/)，或者你可以自己选择。
 
@@ -57,6 +98,11 @@ gcc，全称 GNU Compiler Collection，著名的自由软件，被许多现代�
     我的版本显示是 `9.2.0`，是因为装了旧版本的 tdm-gcc，你们的显示将会是 `10.3.0`。
 
 === "WSL"
+    如下命令安装 `gcc`。如果错误，尝试 `sudo apt-get update` 后再重新执行下面的命令。
+    ```
+    sudo apt install gcc
+    ```
+
     终端中输入 `gcc`，应当出现如下信息：
     ```
     gcc: fatal error: no input files
