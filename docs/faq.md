@@ -83,6 +83,18 @@ wsl --set-default-version 2
 
 然后再在终端打开 Ubuntu，观察是否能继续安装。
 
+对于 `0x80370102` 错误，比较顽固，参考[官方文档](https://aka.ms/enablevirtualization)还需要更多的步骤。在终端中输入如下命令：
+```
+bcdedit /enum | findstr -i hypervisorlaunchtype
+```
+
+如果显示 `hypervisorlaunchtype Off`，说明你需要将其启动。输入如下命令：
+```
+bcdedit /set hypervisorlaunchtype Auto
+```
+
+再重启，尝试在终端打开 Ubuntu，此时问题应当被解决。
+
 ## “WSL 外” 和 “WSL 内”
 
 以下窗口就是我所说的“WSL 外”，即 Windows 本机，不在其 Ubuntu 虚拟机中。
@@ -137,20 +149,32 @@ gcc test.c
 
 打开 VSCode，按以下步骤选择打开文件夹，打开空文件夹 test。
 
-![image-20230920210906449](graph/image-20230920210906449.png)
+<div style="text-align:center;">
+    <img src="../graph/open_files.png" alt="open_files" style="margin: 0 auto; zoom: 80%;"/>
+</div>
 
 新建文件，命名为 `a.c`
 
-![image-20230920211245141](graph/image-20230920211245141.png)
+<div style="text-align:center;">
+    <img src="../graph/create_file.png" alt="create_file" style="margin: 0 auto; zoom: 80%;"/>
+</div>
 
 在 `a.c` 中写代码，写完代码后终端-新建终端
 
-![image-20230920211413110](graph/image-20230920211413110.png)
+<div style="text-align:center;">
+    <img src="../graph/create_terminal.png" alt="create_terminal" style="margin: 0 auto; zoom: 80%;"/>
+</div>
 
 在终端中输入 `gcc a.c`，回车，发现左侧生成了 `a.exe`（Windows 系统下，相信 macOS 用户和 WSL 用户不需要看这个保姆式教程）
 
-![image-20230920211522366](graph/image-20230920211522366.png)
+<div style="text-align:center;">
+    <img src="../graph/gcc_a_c.png" alt="gcc_a_c" style="margin: 0 auto; zoom: 80%;"/>
+</div>
 
 再在终端输入 `./a.exe`，就会发现运行成功。
 
-![image-20230920211723356](graph/image-20230920211723356.png)
+<div style="text-align:center;">
+    <img src="../graph/execute_a_exe.png" alt="execute_a_exe" style="margin: 0 auto; zoom: 80%;"/>
+</div>
+
+这样就成功让代码跑起来了。

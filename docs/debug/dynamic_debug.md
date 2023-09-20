@@ -94,7 +94,7 @@ printf 大法的强大之处在于它可以在程序的各种位置灵活输出�
 
 !!! info "注意 `launch.json` 中的 `miDebuggerPath` 项是 gdb 的路径，对于未使用 WSL、按默认目录安装了 tdm-gcc 的 Windows 用户来说不需要修改，但是其他情况（tdm-gcc 不默认安装、使用 WSL 或 Mac 用户）下需要确认自己的 gdb 路径并进行修改。"
 
-创建源代码文件 `a.c`，如下图所示：
+创建源代码文件 `a.c`，如下图所示。注意 `a.c` 和 `.vscode` 文件夹是同级的。
 
 ![vscode_debug_config](graph/vscode_debug_config.png)
 
