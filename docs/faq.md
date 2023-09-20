@@ -65,7 +65,9 @@ gcc: 致命错误: 没有输入文件
     Error: 0x80370114 ??????? Linux ? Windows ???
     ```
 
-建议使用 [bing](https://cn.bing.com)，把错误信息复制粘贴进行搜索，一般能找到解决方案。或者尝试这篇[解决 WSL2 的 0x800701bc 错误](https://zhuanlan.zhihu.com/p/599286889)，虽然你的错误编号可能不是这个，但是这篇文章给出的是旧版 WSL 的手动安装步骤，事实上来自[微软官方文档](https://learn.microsoft.com/zh-cn/windows/wsl/install-manual)，你也可以直接参考官方文档。
+对于不在上面的错误编号，建议使用 [bing](https://cn.bing.com)，把错误信息复制粘贴进行搜索，一般能找到解决方案；也可以先试试下面的方法。
+
+对于上面有的错误编号，尝试这篇[解决 WSL2 的 0x800701bc 错误](https://zhuanlan.zhihu.com/p/599286889)。虽然你的错误编号可能不是这个，但也是可以用的，因为这篇文章给出的是旧版 WSL 的手动安装步骤，事实上来自[微软官方文档](https://learn.microsoft.com/zh-cn/windows/wsl/install-manual)。你也可以直接参考官方文档。
 
 进行以上操作后，尝试在终端打开 Ubuntu，如果打开成功并让你注册用户名，则可以继续 WSL 安装。如果仍然不行，则尝试打开控制面板(Control Panel)-程序与功能(Programs and Features)-启用或关闭 Windows 功能（Turn Windows Features on or off），选上红框标注的两个功能：
 
