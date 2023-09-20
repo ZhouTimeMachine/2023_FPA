@@ -62,17 +62,6 @@ wsl --install
 
 > 上面已经完成了安装，这里是为了方便未来的使用而进行的一些说明
 
-以上安装完成后，登录 Ubuntu 将会默认以 root 用户打开。但是 root 用户具有最高权限，胡乱操作容易出问题，以及 root 用户的颜色是白色的，不是特别好看，因此可以修改默认的登录用户。首先在 WSL 外输入以下指令以停止 WSL：
-
-```
-wsl --shutdown
-```
-
-然后对 Ubuntu 进行默认用户配置的修改，假设你设定的用户名为 zhou：
-```
-Ubuntu config --default-user zhou
-```
-
 Linux 的发行版本默认安装在 C 盘，推荐将其导出到其他数据盘，避免占用 C 盘太多空间。例如完成了 Ubuntu 的安装，可以在 D 盘建立目录 `D:\wsl\ubuntu`（按个人喜好定义目录），随后在命令提示符/终端执行：
 ```
 wsl --export Ubuntu D:\wsl\ubuntu\ubuntu.tar
@@ -86,6 +75,19 @@ wsl --unregister Ubuntu
 最后重新导入。
 ```
 wsl --import Ubuntu D:\wsl\ubuntu D:\wsl\ubuntu\ubuntu.tar
+```
+
+以上操作完成后，登录 Ubuntu 将会默认以 root 用户打开。但是 root 用户具有最高权限，胡乱操作容易出问题，以及 root 用户的颜色是白色的，不是特别好看，因此可以修改默认的登录用户。首先**在 WSL 外**输入以下指令以停止 WSL：
+
+> 如果不知道 WSL 外是什么意思，参考[“WSL 外” 和 “WSL 内”](../../faq/#wsl-wsl)
+
+```
+wsl --shutdown
+```
+
+然后对 Ubuntu 进行默认用户配置的修改，假设你设定的用户名为 zhou：
+```
+Ubuntu config --default-user zhou
 ```
 
 使用终端的一大好处是方便打开 WSL。如下图所示，点击 Ubuntu 22.04.2 LTS 或者使用 Ctrl + Shift + 5 组合键就可以方便地打开 Ubuntu 22.04。当然这是因为我安装的是 `Ubuntu 22.04` 的缘故，在你们的电脑中显示的应该就是 `Ubuntu`。

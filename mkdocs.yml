@@ -19,6 +19,7 @@ nav:
     - 章节概述: debug/index.md
     - 静态调试: debug/static_debug.md
     - 动态调试: debug/dynamic_debug.md
+  - FAQ: faq.md
 
 theme:
   name: material
