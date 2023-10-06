@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",
+                "-o", 
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-g", // 生成和调试有关的信息
+                "-Wall", // 开启额外警告
+                "-std=gnu11" // 使用 c11 标准，或根据自己的需要进行修改
+            ],
+            "group": "build",
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                "reveal": "silent"
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
