@@ -48,7 +48,9 @@ printf 大法的强大之处在于它可以在程序的各种位置灵活输出�
             "group": "build",
             "presentation": {
                 // Reveal the output only if unrecognized errors occur.
-                "reveal": "silent"
+                "reveal": "silent",
+                "revealProblems": "onProblem",
+                "close": true
             },
             // Use the standard MS compiler pattern to detect errors, warnings and infos
             "problemMatcher": "$msCompile"
